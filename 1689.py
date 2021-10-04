@@ -12,7 +12,6 @@ print(int('3'))
 # Given a string n that represents a positive decimal integer, return the minimum number of positive deci-binary numbers needed so that they sum up to n.
 
 
-
 class Solution(object):
     def minPartitions(self, n):
         """
@@ -22,14 +21,15 @@ class Solution(object):
         
 #         since the provided digit can only be a sum of 1s, the digit with the most 1s is the greatest number
 
-        greatest_digit = max([char for char in n])
+#         greatest_digit = max([char for char in n])
     
-        return int(greatest_digit)
+#         return int(greatest_digit)
     
-#         temp = '0'
-#         for digit in n:
-# #             "3" "2"
-#             if (c > temp):
-#                 temp = c
-#             # temp = "3"
-#         return int(temp)
+        temp = '0'
+        for digit in n:
+#             "3" "2"
+            if (digit > temp):
+                temp = digit
+            # temp = "3"
+        return int(temp)
+                
