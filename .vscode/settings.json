@@ -1,0 +1,21 @@
+{
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py",
+        "./",
+        "--parallel",
+        "{n}",
+        "--chunk={c}"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    // "python.autoComplete.extraPaths": ["./"],
+    // "python.testing.unittestPathPattern": "test_*.py",
+    "testExplorer.showOnRun": true,
+    "testExplorer.addToEditorContextMenu": true,
+    "testOnSave.enabled": true,
+    // "testOnSave.testCommand": "test",
+}
